@@ -94,7 +94,8 @@ header nav ul li:not(.active):not(.btn) a:hover {
 
 header nav ul li.btn a,
 .email .block button,
-.feedback form button {
+.feedback form button,
+.banner-services .info button {
   background: #fa9021;
   padding: 0.5625em 1.0625em;
   border-radius: 0.3125em;
@@ -103,7 +104,8 @@ header nav ul li.btn a,
 
 header nav ul li.btn a:hover,
 .email .block button:hover,
-.feedback form button:hover {
+.feedback form button:hover,
+.banner-services .info button:hover {
   background: #dc7000;
 }
 
@@ -382,18 +384,21 @@ header nav ul li.btn a:hover,
 }
 
 .hero-about .info span,
-.map span {
+.map span,
+.customers span {
   display: inline-block;
   margin-bottom: 1.5em;
 }
 
 .hero-about .info span a:hover,
-.map span a:hover {
+.map span a:hover,
+.customers span a:hover {
   color: #dc7000;
 }
 
 .hero-about .info span .active,
-.map span .active {
+.map span .active,
+.customers span .active {
   color: #dc7000;
 }
 
@@ -615,6 +620,190 @@ header nav ul li.btn a:hover,
   padding: 1.5em 3em;
   float: right;
   cursor: pointer;
+}
+
+/* Page Services */
+
+/* Section customers*/
+
+.customers {
+  padding: 3em;
+  text-align: center;
+}
+
+.customers p:not(.customers .info .block p) {
+  margin: 1em 0;
+}
+
+.customers .info {
+  background: #1c140f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 10em;
+  border-radius: 1em;
+  margin-top: 3em;
+}
+
+.customers .info .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customers .info .block:not(:nth-child(1)) {
+  border-left: 0.6px solid #ffffff;
+  height: 100px;
+  padding-left: 150px;
+}
+
+.customers .info .block img {
+  margin-right: 1em;
+}
+
+.customers .info .block h2 {
+  text-align: start;
+}
+
+/* Section Banner Video*/
+
+.banner-video {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-video .info {
+  width: 45%;
+}
+
+.banner-video .info h3 {
+  width: 15em;
+}
+
+.banner-video .info p {
+  width: 27em;
+  margin: 1em 0;
+}
+
+.banner-video .info ul {
+  list-style: none;
+}
+
+.banner-video .info ul li {
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.banner-video .info ul li img {
+  margin-right: 1em;
+}
+
+/* Section Banners */
+
+.banner-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.banner-services .info {
+  width: 45%;
+}
+
+.banner-services .info h3 {
+  font-weight: medium;
+  width: 18em;
+}
+
+.banner-services .info p {
+  margin: 2em 0;
+  width: 27em;
+}
+
+.banner-services .info button {
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  padding: 1em 3em;
+}
+
+/* Section reviews */
+
+.reviews-background {
+  background: #1c140f;
+}
+
+.reviews {
+  padding: 3em 0;
+}
+
+.reviews .title {
+  text-align: center;
+  width: 15em;
+  margin: 0 auto;
+}
+
+.reviews .text {
+  text-align: center;
+  width: 35em;
+  margin: 2em auto 0 auto;
+}
+
+.reviews p {
+  font-size: 0.875em;
+}
+
+.reviews .blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.reviews .block {
+  width: 25%;
+  border: 2px solid #fff;
+  border-radius: 0.8em;
+  padding: 2em 2em;
+  transition: all 500ms ease;
+}
+
+.reviews .block:hover {
+  border: 2px solid #dc7000;
+  background: #0f0901;
+}
+
+.reviews .block .person-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews .block .person-container .person-data {
+  display: flex;
+}
+
+.reviews .block .person-container .person-data img {
+  margin-right: 1em;
+}
+
+.reviews .block span {
+  display: flex;
+}
+
+.reviews .block span img {
+  margin-left: 0.5em;
+}
+
+.reviews .block h3 {
+  font-size: 1.125em;
+  font-weight: medium;
+}
+
+.reviews .block > p {
+  margin-top: 2em;
 }
 
 /* Section footer*/

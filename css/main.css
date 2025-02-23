@@ -238,7 +238,8 @@ header nav ul li.btn a:hover,
 /* Section with background */
 
 .features {
-  background: url("/img/background-rocks.png") no-repeat center center fixed;
+  background: url("/img/img-landing-page/background-rocks.png") no-repeat center
+    center fixed;
   background-size: cover;
   padding: 6em 0;
 }

@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.125em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.875em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Section header */
+
+header {
+  padding: 3.125em 0;
+}
+
+header .logo,
+footer .blocks .logo {
+  text-transform: uppercase;
+  font-size: 1.8125em;
+  font-weight: 800;
+}
+
+header nav {
+  float: right;
+  width: 50%;
+}
+
+header nav ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li.active::after {
+  content: "";
+  display: block;
+  width: 2.5em;
+  height: 0.313em;
+  border-radius: 0.625em;
+  background: #dc7000;
+  position: relative;
+  top: 0.625em;
+  left: -0.938em;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+  color: #dc7000;
+}
+
+header nav ul li.btn a,
+.email .block button {
+  background: #fa9021;
+  padding: 0.5625em 1.0625em;
+  border-radius: 0.3125em;
+  transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover,
+.email .block button:hover {
+  background: #dc7000;
+}
+
+/* Section hero */
+
+.hero {
+  padding-right: 6.25em;
+  position: relative;
+  z-index: 1;
+}
+
+.hero--info {
+  width: 33.125em;
+  padding: 4.375em;
+}
+
+.hero--info h2 {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #e87d0e;
+}
+
+.hero--info p {
+  font-weight: medium;
+  line-height: 170%;
+  margin: 1.875em 0;
+}
+
+.hero--info .btn,
+.hero-about .info .btn {
+  background: #fa8305;
+  color: #fff;
+  font-size: 1.063em;
+  border-radius: 3.125em;
+  padding: 0.938em 1.875em;
+  border: 0;
+  transition: all 500ms ease;
+}
+
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero img {
+  position: absolute;
+  top: -9.375em;
+  right: 2.4em;
+}
+
+/* Section with games */
+
+.trending {
+  padding-top: 9em;
+}
+
+.trending .see-all,
+.projects .see-all {
+  color: #fff;
+  background: #25211d;
+  border-radius: 0.313em;
+  padding: 0.75em 1.438em;
+  float: right;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.trending .see-all:hover,
+.projects .see-all:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.trending .games {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.125em 0;
+}
+
+.trending .games span {
+  display: block;
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+.trending .games span img {
+  position: relative;
+  top: 0.35em;
+  margin-right: 0.2em;
+}
+
+/* Section with text */
+
+.big-text {
+  padding-top: 2em;
+  font-weight: bold;
+  font-size: 2.188em;
+  text-align: center;
+  width: 27em;
+}
+
+/* Section with banner */
+
+.banner {
+  position: relative;
+  padding: 6em 0;
+}
+
+.banner h3 {
+  margin-bottom: 0.7em;
+}
+
+.banner p {
+  line-height: 170%;
+  margin-bottom: 1.875em;
+  width: 34.375em;
+}
+
+.banner img:not(.dots) {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 1.875em 0;
+}
+
+.banner img.dots {
+  position: absolute;
+  right: 10em;
+  top: 13.65em;
+}
+
+/* Section with background */
+
+.features {
+  background: url("/img/background-rocks.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 6em 0;
+}
+
+.features h3,
+.features p {
+  text-align: center;
+  max-width: 60em;
+  margin: 0 auto 1.5em auto;
+}
+
+.features h3 {
+  max-width: 27em;
+}
+
+.features .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.features .info .block {
+  text-align: center;
+  width: 20%;
+  margin: 1.875em 2%;
+}
+
+.features .info .block img {
+  margin-bottom: 1em;
+}
+
+/* Section with recent projects */
+
+.projects {
+  padding: 6em 0 4em 0;
+}
+
+.projects h3,
+.projects p {
+  text-align: center;
+  max-width: 30em;
+  margin: 0 auto 1.5em auto;
+}
+
+.projects h3 {
+  max-width: 27em;
+}
+
+.projects .images {
+  display: flex;
+  justify-content: space-around;
+  margin: 5em 0 -2em 0;
+}
+
+.projects .see-all {
+  margin: 6em auto 0 auto;
+  float: none;
+  width: 3.6em;
+  text-align: center;
+}
+
+/* Section with email */
+
+.email {
+  padding-bottom: 7.5em;
+}
+
+.email h3 {
+  font-size: 1.875em;
+  margin-top: 3.75em;
+  margin-bottom: 0.5em;
+}
+
+.email p:not(.block p) {
+  width: 35em;
+  margin-bottom: 3em;
+}
+
+.email .block {
+  background: #1c140f;
+  margin-top: 1.875em;
+  border-radius: 0.7em;
+  padding: 2.5em 3%;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email .block h4 {
+  font-weight: medium;
+  font-size: 1.875em;
+}
+
+.email .block p {
+  width: 31.25em;
+}
+
+.email .block input {
+  position: relative;
+  right: -7.5em;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 0.5em;
+  width: 23.75em;
+  padding: 1.5em 2.5em;
+  z-index: 1;
+  padding-right: 7.5em;
+}
+
+.email .block input::placeholder {
+  color: #898989;
+}
+
+.email .block button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  border: 0;
+  padding: 0.813em 1.063em;
+  color: #fff;
+}
+
+/* Page About Us */
+
+/* Section hero*/
+
+.hero-about {
+  position: relative;
+}
+
+.hero-about .info {
+  width: 31.25em;
+  padding: 8.5em 0;
+}
+
+.hero-about .info span {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+
+.hero-about .info span a:hover {
+  color: #dc7000;
+}
+
+.hero-about .info span .active {
+  color: #dc7000;
+}
+
+.hero-about .info h1 {
+  margin-bottom: 1em;
+  font-size: 1.875em;
+  line-height: 180%;
+  width: 15em;
+}
+
+.hero-about .info .btn {
+  margin-top: 1.5em;
+}
+
+.hero-about img {
+  position: absolute;
+  right: -14.8em;
+  top: 0;
+}
+
+/* Section work*/
+
+.work {
+  padding: 5em 0;
+}
+
+.work h2 {
+  font-size: 1.563em;
+  margin-bottom: 2.5em;
+}
+
+.work .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .blocks .block {
+  width: 25%;
+  border-radius: 0.8em;
+  padding: 3.125em 2.188em;
+  background: #1c140f;
+}
+
+.work .blocks .block h3 {
+  font-size: 1.25em;
+  margin: 1.25em 0;
+}
+
+.work .blocks .block .badge {
+  border-radius: 0.5em;
+  padding: 0.625em 1.25em;
+}
+
+.work .blocks .block:nth-child(1) .badge {
+  background: rgba(176, 0, 220, 0.11);
+}
+
+.work .blocks .block:nth-child(2) .badge {
+  background: rgba(220, 66, 0, 0.11);
+}
+
+.work .blocks .block:nth-child(3) .badge {
+  background: rgba(0, 220, 141, 0.11);
+}
+
+/* Section banner-about*/
+
+.banner-about-background {
+  background: #1c140f;
+}
+
+.banner-about {
+  position: relative;
+  padding: 5em 0;
+}
+
+.banner-about img {
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-about .block {
+  padding: 5em 0 2em 45em;
+  width: 36em;
+}
+
+.banner-about .block h3 {
+  margin: 0.8em 0;
+}
+
+/* Section team*/
+
+.team {
+  padding-top: 5em;
+}
+
+.team .blocks {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team .blocks .block {
+  background: #1c140f;
+  padding: 1.8em 5em;
+  border-radius: 0.9em;
+  text-align: center;
+}
+
+/* Section footer*/
+
+footer {
+  background: #070707;
+  padding: 5em 0 2.5em 0;
+}
+
+footer .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .blocks p {
+  width: 18.75em;
+  margin: 0.9em 0;
+}
+
+footer .blocks h4 {
+  font-weight: medium;
+  font-size: 1.063em;
+}
+
+footer .blocks ul {
+  list-style: none;
+}
+
+footer .blocks ul li {
+  margin-top: 0.438em;
+}
+
+footer .blocks ul li a:hover {
+  color: #dc7000;
+}
+
+footer .blocks .images {
+  align-self: flex-end;
+}
+
+footer hr {
+  margin: 1.875em 0;
+  border: 0;
+  height: 0.6px;
+  background: #ccc;
+}
+
+footer > p {
+  margin-top: 2.5em;
+  text-align: center;
+}

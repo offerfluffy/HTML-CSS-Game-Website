@@ -93,7 +93,8 @@ header nav ul li:not(.active):not(.btn) a:hover {
 }
 
 header nav ul li.btn a,
-.email .block button {
+.email .block button,
+.feedback form button {
   background: #fa9021;
   padding: 0.5625em 1.0625em;
   border-radius: 0.3125em;
@@ -101,7 +102,8 @@ header nav ul li.btn a,
 }
 
 header nav ul li.btn a:hover,
-.email .block button:hover {
+.email .block button:hover,
+.feedback form button:hover {
   background: #dc7000;
 }
 
@@ -379,16 +381,19 @@ header nav ul li.btn a:hover,
   padding: 8.5em 0;
 }
 
-.hero-about .info span {
+.hero-about .info span,
+.map span {
   display: inline-block;
   margin-bottom: 1.5em;
 }
 
-.hero-about .info span a:hover {
+.hero-about .info span a:hover,
+.map span a:hover {
   color: #dc7000;
 }
 
-.hero-about .info span .active {
+.hero-about .info span .active,
+.map span .active {
   color: #dc7000;
 }
 
@@ -492,6 +497,124 @@ header nav ul li.btn a:hover,
   padding: 1.8em 5em;
   border-radius: 0.9em;
   text-align: center;
+}
+
+/* Page Contact Us */
+
+/* Section map*/
+
+.map {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.map p {
+  margin: 2em 0 4em 0;
+}
+
+/* Section info*/
+
+.info-contact-us {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-contact-us .block:nth-child(1) p {
+  margin-bottom: 0.5em;
+}
+
+.info-contact-us .block:nth-child(2) {
+  border-left: 0.6px solid #ffffff;
+  height: 100px;
+  padding-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.info-contact-us .block:nth-child(2) img {
+  margin-right: 1em;
+}
+
+.info-contact-us .block:nth-child(3) {
+  border-left: 0.6px solid #ffffff;
+  height: 100px;
+  padding-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.info-contact-us .block:nth-child(3) img {
+  margin-right: 1em;
+}
+
+/* Section form*/
+
+.feedback {
+  padding: 4em 0;
+  background: url("/img/img-contact-us/background.png") no-repeat fixed;
+  background-size: cover;
+}
+
+.feedback h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.875em;
+}
+
+.feedback p {
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+
+.feedback form {
+  margin: 5em auto;
+  width: 45%;
+}
+
+.feedback form .inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback form .inline > div {
+  width: 50%;
+}
+
+.feedback form label {
+  color: #4f4f4f;
+  font-size: 0.875em;
+}
+
+.feedback form input,
+.feedback form textarea {
+  background: #4f4f4f;
+  border: 0.6px solid #cecece;
+  border-radius: 0.8em;
+  display: block;
+  width: 90%;
+  padding: 0.938em 0.625em;
+  outline: none;
+  color: #fff;
+  margin: 0.438em 0 1.25em 0;
+}
+
+.feedback form .one-line {
+  width: 96%;
+}
+
+.feedback form textarea {
+  resize: none;
+  height: 14.5em;
+}
+
+.feedback form button {
+  border: 0;
+  color: #fff;
+  padding: 1.5em 3em;
+  float: right;
+  cursor: pointer;
 }
 
 /* Section footer*/

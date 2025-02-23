@@ -460,17 +460,13 @@ header nav ul li.btn a:hover,
 }
 
 .banner-about {
-  position: relative;
-  padding: 5em 0;
-}
-
-.banner-about img {
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
 }
 
 .banner-about .block {
-  padding: 5em 0 2em 45em;
+  padding-top: 3em;
   width: 36em;
 }
 

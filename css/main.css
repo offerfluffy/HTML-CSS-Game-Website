@@ -385,20 +385,23 @@ header nav ul li.btn a:hover,
 
 .hero-about .info span,
 .map span,
-.customers span {
+.customers span,
+.hero-news span {
   display: inline-block;
   margin-bottom: 1.5em;
 }
 
 .hero-about .info span a:hover,
 .map span a:hover,
-.customers span a:hover {
+.customers span a:hover,
+.hero-news span a:hover {
   color: #dc7000;
 }
 
 .hero-about .info span .active,
 .map span .active,
-.customers span .active {
+.customers span .active,
+.hero-news span .active {
   color: #dc7000;
 }
 
@@ -804,6 +807,126 @@ header nav ul li.btn a:hover,
 
 .reviews .block > p {
   margin-top: 2em;
+}
+
+/* Page News */
+
+/* Section Hero-news */
+
+.hero-news {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.hero-news p {
+  margin: 1em 0;
+}
+
+/* Section Search */
+
+.search {
+  padding-bottom: 3em;
+  text-align: center;
+  position: relative;
+}
+
+.search img {
+  position: absolute;
+  top: 0.8em;
+  left: 33.6em;
+}
+
+.search input {
+  position: relative;
+  background: #1c140f;
+  border-radius: 1em;
+  border: 0;
+  outline: none;
+  padding: 1em 4em;
+  width: 20%;
+  color: #fff;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+/* Section News */
+
+.news {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news .left-section {
+  width: 41.5%;
+}
+
+.news .left-section hr {
+  margin: 5em 0;
+  border: 0;
+  height: 0.6px;
+  background: #a5a5a5;
+}
+
+.news .right-section .block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.news .right-section .block img {
+  margin-right: 1em;
+}
+
+.news .right-section .block .text > h3 {
+  margin-top: 1em;
+  width: 17em;
+  font-size: 1.438em;
+}
+
+.news span.info {
+  display: inline-flex;
+  align-items: center;
+}
+
+.news span.info .name {
+  padding: 0.5em 1em;
+  margin-right: 1em;
+}
+
+.news span.info .name.blue {
+  background: #2351f5;
+}
+
+.news span.info .name.coral {
+  background: #ff8484;
+}
+
+.news span.info .name.orange {
+  background: #ff7c32;
+}
+
+.news span.info .name.green {
+  background: #23a54f;
+}
+
+.news span.info .name.purple {
+  background: #9921c3;
+}
+
+.news .article img {
+  margin-bottom: 1em;
+}
+
+.news .article h3 {
+  width: 19em;
+  margin: 1em 0;
+}
+
+.news .article > p {
+  width: 30em;
+  margin: 1em 0;
 }
 
 /* Section footer*/

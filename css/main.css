@@ -831,9 +831,10 @@ header nav ul li.btn a:hover,
 }
 
 .search img {
-  position: absolute;
-  top: 0.8em;
-  left: 33.6em;
+  position: relative;
+  top: 3px;
+  right: -40px;
+  z-index: 2;
 }
 
 .search input {

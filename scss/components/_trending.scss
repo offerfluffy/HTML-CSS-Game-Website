@@ -3,21 +3,6 @@
 .trending {
   padding-top: 9em; // Px
 
-  &__see-all {
-    color: #fff;
-    background: $color-button-inverse;
-    border-radius: 0.313em; // Px
-    padding: 0.75em 1.438em;
-    float: right;
-    display: block;
-    transition: all 500ms ease;
-  }
-
-  &trending__see-all:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-
   &__list{
     display: flex;
     justify-content: space-between;
@@ -35,5 +20,20 @@
     position: relative; // Px
     top: 0.35em;
     margin-right: 0.2em;
+  }
+
+  &__button{
+    color: $color-text-default;
+    background: $color-button-inverse;
+    border-radius: 0.313em; // Px
+    padding: 0.75em 1.438em;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 }

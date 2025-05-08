@@ -1,0 +1,65 @@
+@use "abstracts/variables" as *;
+
+.email {
+  padding-bottom: 7.5em;
+
+  &__title{
+    font-size: 1.875em;
+    margin-top: 3.75em;
+    margin-bottom: 0.5em;
+  }
+
+  &__text {
+    width: 35em;
+    margin-bottom: 3em;
+  }
+
+  &__form {
+    &-wrapper {
+      background: $bg-default;
+      margin-top: 1.875em;
+      border-radius: 0.7em;
+      padding: 2.5em 3%;
+      width: 94%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title {
+      font-weight: medium;
+      font-size: 1.875em;
+    }
+
+    &-text {
+      width: 31.25em;
+    }
+
+    &-input {
+      position: relative;
+      right: -7.5em;
+      font-family: "Poppins", sans-serif;
+      background: $bg-email;
+      outline: none;
+      border: 0;
+      border-radius: 0.5em;
+      width: 23.75em;
+      padding: 1.5em 2.5em;
+      z-index: 1;
+      padding-right: 7.5em;
+
+      &::placeholder {
+        color: $color-text-muted;
+      }
+    }
+
+    &-submit {
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      border: 0;
+      padding: 0.813em 1.063em;
+      color: $color-text-default;
+    }
+  }
+}

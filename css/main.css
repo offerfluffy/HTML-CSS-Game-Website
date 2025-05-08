@@ -326,18 +326,18 @@ footer .blocks .logo {
   padding-bottom: 7.5em;
 }
 
-.email h3 {
+.email__title{
   font-size: 1.875em;
   margin-top: 3.75em;
   margin-bottom: 0.5em;
 }
 
-.email p:not(.block p) {
+.email__text {
   width: 35em;
   margin-bottom: 3em;
 }
 
-.email .block {
+.email__form-wrapper {
   background: #1c140f;
   margin-top: 1.875em;
   border-radius: 0.7em;
@@ -348,16 +348,16 @@ footer .blocks .logo {
   align-items: center;
 }
 
-.email .block h4 {
+.email__form-title {
   font-weight: medium;
   font-size: 1.875em;
 }
 
-.email .block p {
+.email__form-text {
   width: 31.25em;
 }
 
-.email .block input {
+.email__form-input {
   position: relative;
   right: -7.5em;
   font-family: "Poppins", sans-serif;
@@ -371,11 +371,11 @@ footer .blocks .logo {
   padding-right: 7.5em;
 }
 
-.email .block input::placeholder {
+.email__form-input::placeholder {
   color: #898989;
 }
 
-.email .block button {
+.email__form-submit {
   position: relative;
   z-index: 2;
   cursor: pointer;

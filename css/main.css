@@ -176,7 +176,7 @@ footer .blocks .logo {
   padding-top: 9em;
 }
 
-.trending .see-all,
+.trending__see-all,
 .projects .see-all {
   color: #fff;
   background: #25211d;
@@ -187,26 +187,26 @@ footer .blocks .logo {
   transition: all 500ms ease;
 }
 
-.trending .see-all:hover,
+.trending__see-all:hover,
 .projects .see-all:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.trending .games {
+.trending__list{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 3.125em 0;
 }
 
-.trending .games span {
+.trending__followers {
   display: block;
   text-align: center;
   margin-top: 1.2em;
 }
 
-.trending .games span img {
+.trending__icon {
   position: relative;
   top: 0.35em;
   margin-right: 0.2em;
@@ -214,10 +214,11 @@ footer .blocks .logo {
 
 /* Section with text */
 
-.big-text {
+.statement {
+  margin: 0 auto;
   padding-top: 2em;
   font-weight: bold;
-  font-size: 2.188em;
+  font-size: 2.188rem;
   text-align: center;
   width: 27em;
 }

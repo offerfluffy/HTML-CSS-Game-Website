@@ -1,0 +1,51 @@
+@use "abstracts/variables" as *;
+
+.footer {
+  background: $bg-footer;
+  padding: 5em 0 2.5em 0;
+
+  &__logo {
+    text-transform: uppercase;
+    font-size: 1.8125rem;
+    font-weight: 800;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 18.75em; // %
+    margin: 0.9em 0;
+  }
+
+  &__title {
+    font-weight: medium;
+    font-size: 1.063rem;
+  }
+
+  &__nav-item {
+    margin-top: 0.438em;
+  }
+
+  &__nav-link:hover {
+    color: $color-accent;
+  }
+
+  &__images {
+    align-self: flex-end;
+  }
+
+  &__line {
+    margin: 1.875em 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+  }
+
+  &__copy {
+    margin-top: 2.5em;
+    text-align: center;
+  }
+}

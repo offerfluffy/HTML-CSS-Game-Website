@@ -17,6 +17,10 @@ a {
   color: #fff;
 }
 
+ul {
+  list-style: none;
+}
+
 h1 {
   font-weight: bold;
   font-size: 3.125em;
@@ -52,8 +56,7 @@ img {
   padding: 3.125em 0;
 }
 
-.header .logo,
-footer .blocks .logo {
+.header .logo {
   text-transform: uppercase;
   font-size: 1.8125em;
   font-weight: 800;
@@ -946,50 +949,52 @@ footer .blocks .logo {
 
 /* Section footer*/
 
-footer {
+.footer {
   background: #070707;
   padding: 5em 0 2.5em 0;
 }
 
-footer .blocks {
+.footer__logo {
+  text-transform: uppercase;
+  font-size: 1.8125em;
+  font-weight: 800;
+}
+
+.footer__content {
   display: flex;
   justify-content: space-between;
 }
 
-footer .blocks p {
+.footer__text {
   width: 18.75em;
   margin: 0.9em 0;
 }
 
-footer .blocks h4 {
+.footer__title {
   font-weight: medium;
   font-size: 1.063em;
 }
 
-footer .blocks ul {
-  list-style: none;
-}
-
-footer .blocks ul li {
+.footer__nav-item {
   margin-top: 0.438em;
 }
 
-footer .blocks ul li a:hover {
+.footer__nav-link:hover {
   color: #dc7000;
 }
 
-footer .blocks .images {
+.footer__images {
   align-self: flex-end;
 }
 
-footer hr {
+.footer__line {
   margin: 1.875em 0;
   border: 0;
   height: 0.6px;
   background: #ccc;
 }
 
-footer > p {
+.footer__copy {
   margin-top: 2.5em;
   text-align: center;
 }

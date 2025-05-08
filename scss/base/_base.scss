@@ -1,0 +1,37 @@
+@use "abstracts/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: $color-text-default;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text-default;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+img {
+  max-width: 100%;
+}

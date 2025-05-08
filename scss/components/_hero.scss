@@ -1,0 +1,46 @@
+@use "abstracts/variables" as *;
+
+.hero {
+  padding-right: 6.25em;
+
+  position: relative;
+  z-index: 1;
+
+  &__content {
+    width: 33.125em;
+    padding: 4.375em;
+  }
+
+  &__tagline {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: $color-text-heading-accent;
+  }
+
+  &__subtitle {
+    font-weight: medium;
+    line-height: 170%;
+    margin: 1.875em 0;
+  }
+
+  &__button{
+    background: $bg-secondary;
+    color: $color-text-default;
+    font-size: 1.063rem;
+    border-radius: 3.125em;
+    padding: 0.938em 1.875em;
+    border: 0;
+    transition: all 500ms ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -9.375em; // Change px
+    right: 2.4em;
+  }
+}

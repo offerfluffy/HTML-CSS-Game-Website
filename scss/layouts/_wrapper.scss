@@ -1,0 +1,7 @@
+@use "abstracts/variables" as *;
+
+.wrapper {
+  background: $bg-gradient;
+  width: 100%;
+  overflow-x: hidden;
+}

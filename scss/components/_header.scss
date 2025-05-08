@@ -1,0 +1,52 @@
+@use "abstracts/variables" as *;
+
+.header {
+  padding: 3.125em 0; // Change Utils
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 1.8125rem;
+    font-weight: 800;
+  }
+
+  &__nav {
+    float: right;
+    width: 50%;
+  }
+
+  &__nav-list {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-item {
+    display: inline-block;
+  }
+
+  &__nav-item_active::after {
+    content: "";
+
+    display: block;
+
+    width: 2.5em;
+    height: 0.313em; // Change ems
+
+    border-radius: 0.625em;
+    background: $color-accent;
+
+    position: relative;
+    top: 0.625em;
+    left: -0.938em;
+  }
+
+  &__nav-item:not(.header__nav-item_active):not(.header__nav-link .button)
+    .header__nav-link:hover {
+    color: $color-accent;
+  }
+
+  &__nav-link {
+    transition: color 0.3s ease;
+  }
+}

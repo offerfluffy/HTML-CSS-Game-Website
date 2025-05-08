@@ -1,0 +1,15 @@
+@use "abstracts/variables" as *;
+
+.button {
+  padding: 0.5625em 1.0625em;
+  border-radius: 0.3125em;
+  transition: all 500ms ease;
+}
+
+.button_primary {
+  background-color: $color-button-default;
+
+  &:hover {
+    background: #dc7000;
+  }   
+}

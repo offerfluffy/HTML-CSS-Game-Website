@@ -8,55 +8,106 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="container">
-        <span class="logo">LOGO</span>
-        <nav>
-          <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./services.html">Portfolio</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li class="btn"><a href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+      <header class="header">
+        <div class="container">
+          <span class="header__logo logo">LOGO</span>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item_active">
+                <a class="header__nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./about.html">About us</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./services.html">Portfolio</a>
+              </li>
+              <li class="header__nav-item"><a href="./news.html">News</a></li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link button button_primary"
+                  href="./contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
-      <div class="hero container">
-        <div class="hero--info">
-          <h2>3D game Dev</h2>
-          <h1>Work that we produce for our clients</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard.
-          </p>
-          <button class="btn">Get more details</button>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h2 class="hero__tagline">3D game Dev</h2>
+            <h1 class="hero__title">Work that we produce for our clients</h1>
+            <p class="hero__subtitle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard.
+            </p>
+            <button class="hero__button">Get more details</button>
+          </div>
+          <img
+            class="hero__image"
+            src="../img/img-landing-page/svgs/joystick.svg"
+            alt="joystick"
+          />
         </div>
-        <img src="../img/img-landing-page/svgs/joystick.svg" alt="" />
-      </div>
+      </section>
 
-      <div class="container trending">
-        <a href="#" class="see-all">SEE ALL</a>
-        <h3>Currently Trending Games</h3>
+      <section class="trending">
+        <div class="container">
+          <a href="#" class="trending__see-all">SEE ALL</a>
 
-        <div class="games">
-          <div class="block">
-            <img src="../img/img-landing-page/game-1.png" alt="" />
-            <span><img src="./img/fire.svg" alt="" />40 Followers</span>
-          </div>
-          <div class="block">
-            <img src="../img/img-landing-page/game-2.png" alt="" />
-            <span><img src="./img/fire.svg" alt="" />40 Followers</span>
-          </div>
-          <div class="block">
-            <img src="../img/img-landing-page/game-3.png" alt="" />
-            <span><img src="./img/fire.svg" alt="" />40 Followers</span>
-          </div>
-          <div class="block">
-            <img src="../img/img-landing-page/game-4.png" alt="" />
-            <span><img src="./img/fire.svg" alt="" />40 Followers</span>
+          <h3 class="trending__title">Currently Trending Games</h3>
+
+          <div class="trending__list">
+            <div class="trending__item">
+              <img
+                class="trending__image"
+                src="../img/img-landing-page/game-1.png"
+                alt=""
+              />
+              <span class="trending__followers"
+                ><img class="trending__icon" src="./img/fire.svg" alt="" />
+                40 Followers
+              </span>
+            </div>
+            <div class="trending__item">
+              <img
+                class="trending__image"
+                src="../img/img-landing-page/game-2.png"
+                alt=""
+              />
+              <span class="trending__followers"
+                ><img class="trending__icon" src="./img/fire.svg" alt="" />
+                40 Followers
+              </span>
+            </div>
+            <div class="trending__item">
+              <img
+                class="trending__image"
+                src="../img/img-landing-page/game-3.png"
+                alt=""
+              />
+              <span class="trending__followers"
+                ><img class="trending__icon" src="./img/fire.svg" alt="" />
+                40 Followers
+              </span>
+            </div>
+            <div class="trending__item">
+              <img
+                class="trending__image"
+                src="../img/img-landing-page/game-4.png"
+                alt=""
+              />
+              <span class="trending__followers"
+                ><img class="trending__icon" src="./img/fire.svg" alt="" />
+                40 Followers
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="container big-text">
         <p>

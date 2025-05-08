@@ -230,26 +230,26 @@ footer .blocks .logo {
   padding: 6em 0;
 }
 
-.banner h3 {
+.banner__title {
   margin-bottom: 0.7em;
 }
 
-.banner p {
+.banner__text {
   line-height: 170%;
   margin-bottom: 1.875em;
   width: 34.375em;
 }
 
-.banner img:not(.dots) {
+.banner__image {
   position: relative;
   z-index: 2;
   width: 100%;
   margin: 1.875em 0;
 }
 
-.banner img.dots {
+.banner__dots {
   position: absolute;
-  right: 10em;
+  right: 20em; 
   top: 13.65em;
 }
 

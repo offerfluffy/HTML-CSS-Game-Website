@@ -262,31 +262,31 @@ footer .blocks .logo {
   padding: 6em 0;
 }
 
-.features h3,
-.features p {
+.features__title,
+.features__text {
   text-align: center;
   max-width: 60em;
   margin: 0 auto 1.5em auto;
 }
 
-.features h3 {
+.features__title {
   max-width: 27em;
 }
 
-.features .info {
+.features__list{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 5em;
 }
 
-.features .info .block {
+.features__item {
   text-align: center;
   width: 20%;
   margin: 1.875em 2%;
 }
 
-.features .info .block img {
+.features__item-img {
   margin-bottom: 1em;
 }
 

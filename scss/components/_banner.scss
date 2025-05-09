@@ -25,3 +25,22 @@
     top: 13.65em;
   }
 }
+
+.banner-about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+
+  &__wrapper {
+    background: #1c140f;
+  }
+
+  &__content {
+    padding-top: 3em;
+    width: 36em;
+  }
+
+  &__title {
+    margin: 0.8em 0;
+  }
+}

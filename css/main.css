@@ -288,6 +288,27 @@ img {
   top: 13.65em;
 }
 
+/* About page */
+
+.banner-about__wrapper {
+  background: #1c140f;
+}
+
+.banner-about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+}
+
+.banner-about__content {
+  padding-top: 3em;
+  width: 36em;
+}
+
+.banner-about__title {
+  margin: 0.8em 0;
+}
+
 /* Section with background */
 
 .features {
@@ -489,24 +510,6 @@ img {
 
 /* Section banner-about*/
 
-.banner-about-background {
-  background: #1c140f;
-}
-
-.banner-about {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5em;
-}
-
-.banner-about .block {
-  padding-top: 3em;
-  width: 36em;
-}
-
-.banner-about .block h3 {
-  margin: 0.8em 0;
-}
 
 /* Section team*/
 

@@ -32,7 +32,7 @@
   padding-top: 5em;
 
   &__wrapper {
-    background: #1c140f;
+    background: $bg-default;
   }
 
   &__content {
@@ -42,5 +42,33 @@
 
   &__title {
     margin: 0.8em 0;
+  }
+}
+
+.banner-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+
+  &__content {
+    width: 45%;
+  }
+
+  &__title {
+    font-weight: medium;
+    width: 18em;
+  }
+
+  &__text {
+    margin: 2em 0;
+    width: 27em;
+  }
+
+  &__button {
+    border: 0;
+    border-radius: 0;
+    color: $color-text-default;
+    padding: 1em 3em;
   }
 }

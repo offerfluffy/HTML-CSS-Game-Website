@@ -742,28 +742,28 @@ img {
 
 /* Section Banners */
 
-.banner-services {
+.banner-service {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3em 0;
 }
 
-.banner-services .info {
+.banner-service__content {
   width: 45%;
 }
 
-.banner-services .info h3 {
+.banner-service__title {
   font-weight: medium;
   width: 18em;
 }
 
-.banner-services .info p {
+.banner-service__text {
   margin: 2em 0;
   width: 27em;
 }
 
-.banner-services .info button {
+.banner-service__button {
   border: 0;
   border-radius: 0;
   color: #fff;

@@ -1,0 +1,80 @@
+@use "abstracts/variables" as *;
+
+.reviews {
+  padding: 3em 0;
+
+  p {
+    font-size: 0.875em;
+  }
+
+  &__wrapper {
+    background: $bg-default;
+  }
+
+  &__title {
+    text-align: center;
+    width: 15em;
+    margin: 0 auto;
+  }
+
+  &__text {
+    text-align: center;
+    width: 35em;
+    margin: 2em auto 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+
+  &__item {
+    width: 25%;
+    border: 2px solid #fff;
+    border-radius: 0.8em;
+    padding: 2em 2em;
+    transition: all 500ms ease;
+
+    &:hover {
+      border: 2px solid $color-accent;
+      background: #0f0901;
+    }
+  }
+
+  .person {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__info {
+      display: flex;
+    }
+
+    &__image {
+      margin-right: 1em;
+    }
+
+    &__rating-icon {
+      margin-left: 0.5em;
+      width: 24px;
+      height: 24px;
+    }
+
+    &__name {
+      font-size: 1.125em;
+      font-weight: 500;
+    }
+
+    &__location {
+      color: #4f5665;
+    }
+
+    &__review {
+      margin-top: 2em;
+      line-height: 180%;
+    }
+  }
+}

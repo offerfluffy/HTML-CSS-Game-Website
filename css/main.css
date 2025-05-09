@@ -650,19 +650,27 @@ img {
 
 /* Page Services */
 
+.page-header {
+  text-align: center;
+}
+
+.page-header_active {
+  color: #dc7000;
+}
+
+.page-header__text {
+  margin: 1em 0;
+}
+
+.page-header__title {
+  font-size: 2rem;
+}
+
 /* Section customers*/
 
 .customers {
   padding: 3em;
   text-align: center;
-}
-
-.customers_active {
-  color: #dc7000;
-}
-
-.customers__text {
-  margin: 1em 0;
 }
 
 .customers__content{
@@ -772,7 +780,7 @@ img {
 
 /* Section reviews */
 
-.reviews-background {
+.reviews__wrapper {
   background: #1c140f;
 }
 
@@ -780,13 +788,13 @@ img {
   padding: 3em 0;
 }
 
-.reviews .title {
+.reviews__title {
   text-align: center;
   width: 15em;
   margin: 0 auto;
 }
 
-.reviews .text {
+.reviews__text {
   text-align: center;
   width: 35em;
   margin: 2em auto 0 auto;
@@ -796,13 +804,13 @@ img {
   font-size: 0.875em;
 }
 
-.reviews .blocks {
+.reviews__list{
   display: flex;
   justify-content: space-between;
   margin-top: 3em;
 }
 
-.reviews .block {
+.reviews__item {
   width: 25%;
   border: 2px solid #fff;
   border-radius: 0.8em;
@@ -810,40 +818,47 @@ img {
   transition: all 500ms ease;
 }
 
-.reviews .block:hover {
+.reviews__item:hover {
   border: 2px solid #dc7000;
   background: #0f0901;
 }
 
-.reviews .block .person-container {
+.reviews__item .person__info {
   display: flex;
-  align-items: center;
+}
+
+.reviews__item .person__container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.reviews .block .person-container .person-data {
-  display: flex;
-}
-
-.reviews .block .person-container .person-data img {
+.reviews__item .person__image{
   margin-right: 1em;
 }
 
-.reviews .block span {
+.reviews__item .person__rating {
   display: flex;
 }
 
-.reviews .block span img {
+.reviews__item .person__rating-icon{
   margin-left: 0.5em;
+  width: 24px;
+  height: 24px;
 }
 
-.reviews .block h3 {
+.reviews__item .person__name {
   font-size: 1.125em;
   font-weight: medium;
 }
 
-.reviews .block > p {
+.reviews__item .person__location {
+  color: #4F5665;
+}
+
+.reviews__item .person__review {
   margin-top: 2em;
+  line-height: 180%;
 }
 
 /* Page News */

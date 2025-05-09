@@ -1,0 +1,36 @@
+.customers {
+  padding: 3em;
+  text-align: center;
+
+  &_active {
+    color: #dc7000;
+  }
+
+  &__text {
+    margin: 1em 0;
+  }
+
+  &__content{
+    background: #1c140f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 10em;
+    border-radius: 1em;
+    margin-top: 3em;
+  }
+
+  &__item:not(:nth-child(1)) {
+    border-left: 0.6px solid #ffffff;
+    height: 100px;
+    padding-left: 150px;
+  }
+
+  &__item-image {
+    margin-right: 1em;
+  }
+
+  &__item-title {
+    text-align: start;
+  }
+}

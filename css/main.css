@@ -657,11 +657,15 @@ img {
   text-align: center;
 }
 
-.customers p:not(.customers .info .block p) {
+.customers_active {
+  color: #dc7000;
+}
+
+.customers__text {
   margin: 1em 0;
 }
 
-.customers .info {
+.customers__content{
   background: #1c140f;
   display: flex;
   justify-content: space-between;
@@ -671,23 +675,23 @@ img {
   margin-top: 3em;
 }
 
-.customers .info .block {
+.customers__item{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.customers .info .block:not(:nth-child(1)) {
+.customers__item:not(:nth-child(1)) {
   border-left: 0.6px solid #ffffff;
   height: 100px;
   padding-left: 150px;
 }
 
-.customers .info .block img {
+.customers__item-image {
   margin-right: 1em;
 }
 
-.customers .info .block h2 {
+.customers__item-title {
   text-align: start;
 }
 

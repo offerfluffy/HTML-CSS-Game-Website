@@ -1,14 +1,12 @@
 @use "abstracts/variables" as *;
 
 .hero {
-  padding-right: 6.25em;
-
   position: relative;
   z-index: 1;
 
   &__content {
-    width: 33.125em;
-    padding: 4.375em;
+    width: 33.125em; // %
+    padding: 4.375em 0;
   }
 
   &__tagline {
@@ -42,5 +40,35 @@
     position: absolute;
     top: -9.375em; // Change px
     right: 2.4em;
+  }
+}
+
+.hero-about {
+  padding-bottom: 100px;
+
+  &__tagline {
+    font-weight: normal;
+    font-size: .9rem;
+  }
+
+  &_active {
+    color: #dc7000;
+  }
+
+  &__title {
+    margin: 1em 0;
+    font-size: 1.875em;
+    line-height: 180%;
+    width: 15em;
+  }
+
+  &__subtitle {
+    margin: 2.5em 0;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

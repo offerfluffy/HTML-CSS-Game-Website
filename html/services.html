@@ -8,17 +8,31 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="container">
-        <span class="logo">LOGO</span>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li class="active"><a href="./services.html">Portfolio</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li class="btn"><a href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+      <header class="header">
+        <div class="container">
+          <span class="header__logo logo">LOGO</span>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item_active">
+                <a class="header__nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./about.html">About us</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./services.html">Portfolio</a>
+              </li>
+              <li class="header__nav-item"><a href="./news.html">News</a></li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link button button_primary"
+                  href="./contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <div class="container customers">
@@ -215,76 +229,106 @@
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="container email">
-        <h3>Lorem Ipsum</h3>
-        <p>
+
+    <section class="email">
+      <div class="container">
+        <h3 class="email__title">Lorem Ipsum</h3>
+        <p class="email__text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
-        <div class="block">
+        <div class="email__form-wrapper">
           <div>
-            <h4>Stay in the loop</h4>
-            <p>
+            <h4 class="email__form-title">Stay in the loop</h4>
+            <p class="email__form-text">
               Subscribe to receive the latest news and updates about TDA. We
               promise not to spam you!
             </p>
           </div>
-          <div>
-            <input type="email" id="email" placeholder="Enter email address" />
-            <button onclick="checkEmail()">Continue</button>
-          </div>
+          <form>
+            <input
+              class="email__form-input"
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+            <button
+              class="email__form-submit button button_primary"
+              onclick="checkEmail()"
+            >
+              Continue
+            </button>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <footer>
-      <div class="blocks container">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
         <div>
-          <span class="logo">LOGO</span>
-          <p>
+          <span class="footer__logo">LOGO</span>
+          <p class="footer__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
         </div>
 
-        <div>
-          <h4>About us</h4>
+        <nav>
+          <h4 class="footer__title">About us</h4>
           <ul>
-            <li><a href="#">Zeux</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Zeux</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Careers</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Contact us</a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
         <div>
-          <h4>Contact us</h4>
-          <p>
+          <h4 class="footer__title">Contact us</h4>
+          <p class="footer__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
           <p>+908 89097 890</p>
         </div>
 
-        <div class="images">
+        <div class="footer__images">
           <a href="#"
-            ><img src="../img/img-landing-page/svgs/facebook-logo.svg" alt=""
+            ><img
+              src="../img/img-landing-page/svgs/facebook-logo.svg"
+              alt=""
           /></a>
           <a href="#"
-            ><img src="../img/img-landing-page/svgs/instagram-logo.svg" alt=""
+            ><img
+              src="../img/img-landing-page/svgs/instagram-logo.svg"
+              alt=""
           /></a>
           <a href="#"
-            ><img src="../img/img-landing-page/svgs/twitter-logo.svg" alt=""
+            ><img
+              src="../img/img-landing-page/svgs/twitter-logo.svg"
+              alt=""
           /></a>
           <a href="#"
-            ><img src="../img/img-landing-page/svgs/linkedIN-logo.svg" alt=""
+            ><img
+              src="../img/img-landing-page/svgs/linkedIN-logo.svg"
+              alt=""
           /></a>
         </div>
       </div>
-      <hr />
-      <p>Copyright &copy; 2025 Lorem All rights Rcerved</p>
-    </footer>
+    </div>
+    <hr class="footer__line" />
+    <p class="footer__copy">Copyright &copy; 2025 Lorem All rights Rcerved</p>
+  </footer>
 
     <script src="../index.js"></script>
   </body>

@@ -128,14 +128,13 @@ img {
 /* Section hero */
 
 .hero {
-  padding-right: 6.25em;
   position: relative;
   z-index: 1;
 }
 
 .hero__content {
   width: 33.125em;
-  padding: 4.375em;
+  padding: 4.375em 0;
 }
 
 .hero__tagline {
@@ -171,6 +170,36 @@ img {
   position: absolute;
   top: -9.375em; 
   right: 2.4em;
+}
+
+.hero-about {
+  padding-bottom: 100px;
+}
+
+.hero-about__tagline {
+  font-weight: normal;
+  font-size: .9rem;
+}
+
+.hero-about_active {
+  color: #dc7000;
+}
+
+.hero-about__title {
+  margin: 1em 0;
+  font-size: 1.875em;
+  line-height: 180%;
+  width: 15em;
+}
+
+.hero-about__subtitle {
+  margin: 2.5em 0;
+}
+
+.hero-about__image {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Section with games */
@@ -391,16 +420,6 @@ img {
 
 /* Section hero*/
 
-.hero-about {
-  position: relative;
-}
-
-.hero-about .info {
-  width: 31.25em;
-  padding: 8.5em 0;
-}
-
-.hero-about .info span,
 .map span,
 .customers span,
 .hero-news span {
@@ -408,36 +427,19 @@ img {
   margin-bottom: 1.5em;
 }
 
-.hero-about .info span a:hover,
 .map span a:hover,
 .customers span a:hover,
 .hero-news span a:hover {
   color: #dc7000;
 }
 
-.hero-about .info span .active,
 .map span .active,
 .customers span .active,
 .hero-news span .active {
   color: #dc7000;
 }
 
-.hero-about .info h1 {
-  margin-bottom: 1em;
-  font-size: 1.875em;
-  line-height: 180%;
-  width: 15em;
-}
 
-.hero-about .info .btn {
-  margin-top: 1.5em;
-}
-
-.hero-about img {
-  position: absolute;
-  right: -14.8em;
-  top: 0;
-}
 
 /* Section work*/
 

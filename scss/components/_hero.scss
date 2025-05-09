@@ -72,3 +72,42 @@
     right: 0;
   }
 }
+
+.hero-service {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    width: 45%;
+  }
+
+  &__title {
+    width: 15em;
+  }
+
+  &__text {
+    width: 27em;
+    margin: 1em 0;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 1em;
+    display: flex;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/img-services/svgs/points.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

@@ -697,37 +697,47 @@ img {
 
 /* Section Banner Video*/
 
-.banner-video {
+.hero-service {
   padding: 3em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.banner-video .info {
+.hero-service__content {
   width: 45%;
 }
 
-.banner-video .info h3 {
+.hero-service__title {
   width: 15em;
 }
 
-.banner-video .info p {
+.hero-service__text {
   width: 27em;
   margin: 1em 0;
 }
 
-.banner-video .info ul {
+.hero-service__list {
   list-style: none;
 }
 
-.banner-video .info ul li {
+.hero-service__item {
+  position: relative;
+  padding-left: 30px;
   margin-bottom: 1em;
   display: flex;
 }
 
-.banner-video .info ul li img {
-  margin-right: 1em;
+.hero-service__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/img-services/svgs/points.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Section Banners */

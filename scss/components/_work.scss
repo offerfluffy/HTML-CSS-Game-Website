@@ -1,0 +1,39 @@
+@use "abstracts/variables" as *;
+
+.work {
+  padding: 5em 0; // Px
+
+  &__title {
+    font-size: 1.563rem;
+    margin-bottom: 2.5em;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 25%;
+    border-radius: 0.8em; // Px
+    padding: 3.125em 2.188em;
+    background: $bg-default;
+  }
+
+  &__item-tagline{
+    border-radius: 0.5em;
+    padding: 0.625em 1.25em;
+  }
+
+  &__item:nth-child(1) &__item-tagline {
+    background: rgba(176, 0, 220, 0.11);
+  }
+
+  &__item:nth-child(2) &__item-tagline {
+    background: rgba(220, 66, 0, 0.11);
+  }
+
+  &__item:nth-child(3) &__item-tagline {
+    background: rgba(0, 220, 141, 0.11);
+  }
+}

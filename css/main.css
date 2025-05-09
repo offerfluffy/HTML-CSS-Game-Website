@@ -176,6 +176,9 @@ img {
   padding-bottom: 100px;
 }
 
+
+/* About page  */
+
 .hero-about__tagline {
   font-weight: normal;
   font-size: .9rem;
@@ -439,50 +442,48 @@ img {
   color: #dc7000;
 }
 
-
-
 /* Section work*/
 
 .work {
   padding: 5em 0;
 }
 
-.work h2 {
+.work__title {
   font-size: 1.563em;
   margin-bottom: 2.5em;
 }
 
-.work .blocks {
+.work__list {
   display: flex;
   justify-content: space-between;
 }
 
-.work .blocks .block {
+.work__item {
   width: 25%;
   border-radius: 0.8em;
   padding: 3.125em 2.188em;
   background: #1c140f;
 }
 
-.work .blocks .block h3 {
+.work__item-title {
   font-size: 1.25em;
   margin: 1.25em 0;
 }
 
-.work .blocks .block .badge {
+.work__item-tagline{
   border-radius: 0.5em;
   padding: 0.625em 1.25em;
 }
 
-.work .blocks .block:nth-child(1) .badge {
+.work__item:nth-child(1) .work__item-tagline {
   background: rgba(176, 0, 220, 0.11);
 }
 
-.work .blocks .block:nth-child(2) .badge {
+.work__item:nth-child(2) .work__item-tagline {
   background: rgba(220, 66, 0, 0.11);
 }
 
-.work .blocks .block:nth-child(3) .badge {
+.work__item:nth-child(3) .work__item-tagline {
   background: rgba(0, 220, 141, 0.11);
 }
 

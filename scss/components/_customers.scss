@@ -1,14 +1,21 @@
+@use "abstracts/variables" as *;
+
 .customers {
   padding: 3em;
 
   &__content{
-    background: #1c140f;
+    background: $bg-default;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3em 10em;
     border-radius: 1em;
     margin-top: 3em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
   }
 
   &__item:not(:nth-child(1)) {

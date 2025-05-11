@@ -1,0 +1,27 @@
+.contact-section {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__label {
+    margin-bottom: 0.5em;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1em;
+  }
+
+  &__divider {
+    border-left: 0.6px solid #ffffff;
+    height: 100px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 1em;
+    }
+  }
+}

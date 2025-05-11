@@ -877,14 +877,14 @@ img {
   position: relative;
 }
 
-.search img {
+.search__icon {
   position: relative;
   top: 5px;
   right: -40px;
   z-index: 2;
 }
 
-.search input {
+.search__input {
   position: relative;
   background: #1c140f;
   border-radius: 1em;
@@ -895,7 +895,7 @@ img {
   color: #fff;
 }
 
-.search input::placeholder {
+.search__input::placeholder {
   color: #fff;
 }
 

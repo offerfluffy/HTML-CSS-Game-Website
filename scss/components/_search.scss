@@ -1,0 +1,29 @@
+@use "abstracts/variables" as *;
+
+.search {
+  padding-bottom: 3em;
+  text-align: center;
+  position: relative;
+
+  &__icon {
+    position: relative;
+    top: 5px;
+    right: -40px;
+    z-index: 2;
+  }
+
+  &__input {
+    position: relative;
+    background: $bg-default;
+    border-radius: 1em;
+    border: 0;
+    outline: none;
+    padding: 1em 4em;
+    width: 20%;
+    color: #fff;
+  }
+
+  &__input::placeholder {
+    color: $color-text-default;
+  }
+}

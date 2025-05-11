@@ -110,18 +110,14 @@ img {
   background-color: #fa9021;
 }
 
-.email .block button,
-.feedback form button,
-.banner-services .info button {
+.feedback form button {
   background: #fa9021;
   padding: 0.5625em 1.0625em;
   border-radius: 0.3125em;
   transition: all 500ms ease;
 }
 
-.email .block button:hover,
-.feedback form button:hover,
-.banner-services .info button:hover {
+.feedback form button:hover {
   background: #dc7000;
 }
 
@@ -168,7 +164,7 @@ img {
 
 .hero__image {
   position: absolute;
-  top: -9.375em; 
+  top: -9.375em;
   right: 2.4em;
 }
 
@@ -176,12 +172,11 @@ img {
   padding-bottom: 100px;
 }
 
-
 /* About page  */
 
 .hero-about__tagline {
   font-weight: normal;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .hero-about_active {
@@ -228,7 +223,7 @@ img {
   transform: scale(1.1);
 }
 
-.trending__list{
+.trending__list {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -284,7 +279,7 @@ img {
 
 .banner__dots {
   position: absolute;
-  right: 20em; 
+  right: 20em;
   top: 13.65em;
 }
 
@@ -329,7 +324,7 @@ img {
   max-width: 27em;
 }
 
-.features__list{
+.features__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -382,7 +377,7 @@ img {
   padding-bottom: 7.5em;
 }
 
-.email__title{
+.email__title {
   font-size: 1.875em;
   margin-top: 3.75em;
   margin-bottom: 0.5em;
@@ -444,22 +439,16 @@ img {
 
 /* Section hero*/
 
-.map span,
-.customers span,
-.hero-news span {
+.map span {
   display: inline-block;
   margin-bottom: 1.5em;
 }
 
-.map span a:hover,
-.customers span a:hover,
-.hero-news span a:hover {
+.map span a:hover{
   color: #dc7000;
 }
 
-.map span .active,
-.customers span .active,
-.hero-news span .active {
+.map span .active {
   color: #dc7000;
 }
 
@@ -491,7 +480,7 @@ img {
   margin: 1.25em 0;
 }
 
-.work__item-tagline{
+.work__item-tagline {
   border-radius: 0.5em;
   padding: 0.625em 1.25em;
 }
@@ -507,9 +496,6 @@ img {
 .work__item:nth-child(3) .work__item-tagline {
   background: rgba(0, 220, 141, 0.11);
 }
-
-/* Section banner-about*/
-
 
 /* Section team*/
 
@@ -535,12 +521,7 @@ img {
 /* Section map*/
 
 .map {
-  padding: 3em 0;
   text-align: center;
-}
-
-.map p {
-  margin: 2em 0 4em 0;
 }
 
 /* Section info*/
@@ -673,7 +654,7 @@ img {
   text-align: center;
 }
 
-.customers__content{
+.customers__content {
   background: #1c140f;
   display: flex;
   justify-content: space-between;
@@ -683,7 +664,7 @@ img {
   margin-top: 3em;
 }
 
-.customers__item{
+.customers__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -804,7 +785,7 @@ img {
   font-size: 0.875em;
 }
 
-.reviews__list{
+.reviews__list {
   display: flex;
   justify-content: space-between;
   margin-top: 3em;
@@ -833,7 +814,7 @@ img {
   align-items: center;
 }
 
-.reviews__item .person__image{
+.reviews__item .person__image {
   margin-right: 1em;
 }
 
@@ -841,7 +822,7 @@ img {
   display: flex;
 }
 
-.reviews__item .person__rating-icon{
+.reviews__item .person__rating-icon {
   margin-left: 0.5em;
   width: 24px;
   height: 24px;
@@ -853,7 +834,7 @@ img {
 }
 
 .reviews__item .person__location {
-  color: #4F5665;
+  color: #4f5665;
 }
 
 .reviews__item .person__review {

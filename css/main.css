@@ -566,7 +566,7 @@ img {
   margin-top: 3em;
 }
 .reviews__item {
-  width: 25%;
+  width: 30%;
   border: 2px solid #fff;
   border-radius: 0.8em;
   padding: 2em 2em;
@@ -586,6 +586,10 @@ img {
 }
 .reviews .person__image {
   margin-right: 1em;
+}
+.reviews .person__rating {
+  display: flex;
+  align-items: center;
 }
 .reviews .person__rating-icon {
   margin-left: 0.5em;

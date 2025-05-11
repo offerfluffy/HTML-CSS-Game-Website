@@ -30,7 +30,7 @@
   }
 
   &__item {
-    width: 25%;
+    width: 30%;
     border: 2px solid #fff;
     border-radius: 0.8em;
     padding: 2em 2em;
@@ -55,6 +55,11 @@
 
     &__image {
       margin-right: 1em;
+    }
+
+    &__rating{
+      display: flex;
+      align-items: center;
     }
 
     &__rating-icon {

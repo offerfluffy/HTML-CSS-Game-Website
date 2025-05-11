@@ -901,80 +901,93 @@ img {
 
 /* Section News */
 
-.news {
+.article-feed {
   display: flex;
   justify-content: space-evenly;
 }
 
-.news .left-section {
+.article-feed__main {
   width: 41.5%;
 }
 
-.news .left-section hr {
+.article-card__image {
+  margin-bottom: 1em;
+}
+
+.article-card__title {
+  width: 19em;
+  margin: 1em 0;
+}
+
+.article-card__summary {
+  width: 30em;
+  margin: 1em 0;
+  line-height: 200%;
+  margin-bottom: 2em;
+}
+
+.article-card__divider {
   margin: 5em 0;
   border: 0;
   height: 0.6px;
   background: #a5a5a5;
 }
 
-.news .right-section .block {
+.article-feed__sidebar {
+  width: 41.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card_compact {
   display: flex;
   align-items: center;
   margin-bottom: 3em;
 }
 
-.news .right-section .block img {
+.article-card__thumbnail {
   margin-right: 1em;
 }
 
-.news .right-section .block .text > h3 {
+.article-card__text .article-card__title {
   margin-top: 1em;
   width: 17em;
   font-size: 1.438em;
 }
 
-.news span.info {
+.article-card__meta {
   display: inline-flex;
   align-items: center;
 }
 
-.news span.info .name {
-  padding: 0.5em 1em;
+.article-card__author {
+  padding: 0.6em 1.2em;
   margin-right: 1em;
+  color: #fff;
 }
 
-.news span.info .name.blue {
-  background: #2351f5;
+.article-card__time {
+  font-size: 0.8em;
 }
 
-.news span.info .name.coral {
-  background: #ff8484;
+.article-card__author_blue {
+  background-color: #2351f5;
 }
 
-.news span.info .name.orange {
-  background: #ff7c32;
+.article-card__author_coral {
+  background-color: #ff8484;
 }
 
-.news span.info .name.green {
-  background: #23a54f;
+.article-card__author_orange {
+  background-color: #ff7c32;
 }
 
-.news span.info .name.purple {
-  background: #9921c3;
+.article-card__author_green {
+  background-color: #23a54f;
 }
 
-.news .article img {
-  margin-bottom: 1em;
-}
-
-.news .article h3 {
-  width: 19em;
-  margin: 1em 0;
-}
-
-.news .article > p {
-  width: 30em;
-  margin: 1em 0;
+.article-card__author_purple {
+  background-color: #9921c3;
 }
 
 /* Section footer*/

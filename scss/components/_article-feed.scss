@@ -1,0 +1,79 @@
+@use "abstracts/variables" as *;
+
+.article-feed {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__main {
+    width: 41.5%;
+  }
+
+  &__sidebar {
+    width: 41.5%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.article-card {
+  &__image {
+    margin-bottom: 1em;
+  }
+
+  &__meta {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__author {
+    padding: 0.6em 1.2em;
+    margin-right: 1em;
+    color: $color-text-default;
+
+    // Color modifiers
+    @each $color, $value in $colors {
+      &_#{$color} {
+        background-color: $value;
+      }
+    }
+  }
+
+  &__time {
+    font-size: 0.8em;
+  }
+
+  &__title {
+    width: 19em;
+    margin: 1em 0;
+  }
+
+  &__summary {
+    width: 30em;
+    margin: 1em 0;
+    line-height: 2;
+    margin-bottom: 2em;
+  }
+
+  &__divider {
+    margin: 5em 0;
+    border: 0;
+    height: 0.6px;
+    background: $color-hr;
+  }
+
+  &_compact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+  &__thumbnail {
+    margin-right: 1em;
+  }
+
+  &__text &__title {
+    margin-top: 1em;
+    width: 17em;
+    font-size: 1.438em;
+  }
+}

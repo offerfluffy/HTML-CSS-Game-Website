@@ -97,33 +97,48 @@
       </div>
     </div>
 
-    <div class="feedback">
+    <section class="feedback">
       <div class="container">
-        <h2>Say hello</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing .</p>
+        <h2 class="feedback__title">Say hello</h2>
+        <p class="feedback__text">
+          Lorem Ipsum is simply dummy text of the printing .
+        </p>
 
-        <form>
-          <div class="inline">
+        <form class="feedback__form">
+          <div class="feedback__form_inline">
             <div>
-              <label for="first name">First Name</label>
-              <input type="text" id="first name" />
+              <label class="feedback__label" for="first name">First Name</label>
+              <input class="feedback__input" type="text" id="first name" />
             </div>
 
             <div>
-              <label for="last name">Last Name</label>
-              <input type="text" id="last name" />
+              <label class="feedback__label" for="last name">Last Name</label>
+              <input class="feedback__input" type="text" id="last name" />
             </div>
           </div>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" class="one-line" />
 
-          <label for="message">Message</label>
-          <textarea id="message" class="one-line"></textarea>
+          <label class="feedback__label" for="email">Email Address</label>
+          <input
+            class="feedback__input"
+            type="email"
+            id="email"
+            class="one-line"
+          />
 
-          <button type="button">Get in touch</button>
+          <label class="feedback__label" for="message">Message</label>
+          <textarea
+            class="feedback__textarea"
+            id="message"
+            class="one-line"
+          ></textarea>
+
+          <button class="feedback__button button button_primary" type="button">
+            Get in touch
+          </button>
         </form>
       </div>
-    </div>
+    </section>
+
     <div class="wrapper">
       <section class="email">
         <div class="container">

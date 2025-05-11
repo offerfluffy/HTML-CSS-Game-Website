@@ -110,17 +110,6 @@ img {
   background-color: #fa9021;
 }
 
-.feedback form button {
-  background: #fa9021;
-  padding: 0.5625em 1.0625em;
-  border-radius: 0.3125em;
-  transition: all 500ms ease;
-}
-
-.feedback form button:hover {
-  background: #dc7000;
-}
-
 /* Section hero */
 
 .hero {
@@ -145,8 +134,7 @@ img {
   margin: 1.875em 0;
 }
 
-.hero__button,
-.hero-about .info .btn {
+.hero__button{
   background: #fa8305;
   color: #fff;
   font-size: 1.063em;
@@ -156,8 +144,7 @@ img {
   transition: all 500ms ease;
 }
 
-.hero__button:hover,
-.hero-about .info .btn:hover {
+.hero__button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -437,21 +424,6 @@ img {
 
 /* Page About Us */
 
-/* Section hero*/
-
-.map span {
-  display: inline-block;
-  margin-bottom: 1.5em;
-}
-
-.map span a:hover {
-  color: #dc7000;
-}
-
-.map span .active {
-  color: #dc7000;
-}
-
 /* Section work*/
 
 .work {
@@ -557,43 +529,44 @@ img {
 /* Section form*/
 
 .feedback {
-  padding: 4em 0;
+  padding: 100px 0;
   background: url("/img/img-contact-us/background.png") no-repeat fixed;
   background-size: cover;
 }
 
-.feedback h2 {
+.feedback__title {
   text-align: center;
   font-weight: normal;
   font-size: 1.875em;
 }
 
-.feedback p {
+.feedback__text {
   margin: 1em 0 0 0;
   text-align: center;
 }
 
-.feedback form {
+.feedback__form {
   margin: 5em auto;
   width: 45%;
 }
 
-.feedback form .inline {
+.feedback__form_inline {
   display: flex;
   justify-content: space-between;
+  width: 95%;
 }
 
-.feedback form .inline > div {
+.feedback__form_inline > div {
   width: 50%;
 }
 
-.feedback form label {
+.feedback__label {
   color: #4f4f4f;
   font-size: 0.875em;
 }
 
-.feedback form input,
-.feedback form textarea {
+.feedback__input,
+.feedback__textarea {
   background: #4f4f4f;
   border: 0.6px solid #cecece;
   border-radius: 0.8em;
@@ -605,21 +578,20 @@ img {
   margin: 0.438em 0 1.25em 0;
 }
 
-.feedback form .one-line {
-  width: 96%;
-}
-
-.feedback form textarea {
+.feedback__textarea {
   resize: none;
   height: 14.5em;
 }
 
-.feedback form button {
-  border: 0;
+.feedback__button {
+  font-size: 1rem;
+  padding: 1.5em 2em;
   color: #fff;
-  padding: 1.5em 3em;
+  border-radius: 15px;
+  border: 0;
   float: right;
-  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 45px;
 }
 
 /* Page Services */
